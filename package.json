@@ -1,0 +1,24 @@
+{
+  "name": "counter",
+  "version": "1.0.0",
+  "description": "A simple Quizlet-like app, Module 323",
+  "scripts": {
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "test": "jest"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "author": "Adrian Jasaroska",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
+    "hyperscript-helpers": "^3.0.3",
+    "ramda": "^0.28.0",
+    "virtual-dom": "^2.1.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
