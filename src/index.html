@@ -1,62 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <!--https://uiverse.io/   Elements have been used from this Website-->
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet" />
+    <style>
+        .font-yeseva {
+            font-family: "Yeseva One", sans-serif;
+        }
+    </style>
     <title>Quizzie</title>
-  </head>
-  <body>
-    <div>
-      <header>
-        Quizzie
-        <nav></nav>
-      </header>
-    </div>
-    <main>
-      <section>
-        <!--https://uiverse.io/carlosepcc/heavy-emu-25-->
-        <button
-          class="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
-        >
-          Add Flashcard
-        </button>
-      </section>
-    </main>
-    <footer class="bg-gray-800 text-white py-4 mt-10">
-      <div class="container mx-auto text-center">
-        <p>&copy; 2024, Adrian Jasaroska. Alle Rechte vorbehalten.</p>
-        <p>Dies ist ein Schulprojekt, Q & A's!</p>
-        <p>Kontakt: <a href="mailto:adrian.jasaroska@ict.csbe.ch" class="text-teal-400">adrian.jasaroska@ict.csbe.ch</a></p>
-        <ul class="flex justify-center space-x-4 mt-4">
-          <li>
-            <a href="https://github.com/JasaroskaAdrian" class="hover:text-teal-400">
-              <!--https://uiverse.io/EcheverriaJesus/kind-badger-70-->
-              <div class="group relative">
-                <button>
-                  <svg
-                    stroke-linejoin="round"
-                    stroke-linecap="round"
-                    stroke-width="2"
-                    stroke="currentColor"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    class="w-8 hover:scale-125 duration-200 hover:stroke-blue-500"
-                  >
-                    <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                    ></path>
-                  </svg>
-                </button>
-                <span class="absolute -top-14 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 px-3 rounded-lg border border-gray-300 bg-white py-2 text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100">
-                    GitHub
-                </span>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="bg-teal-700">
+        <div>
+            <img src="./images/Logo.png" />
+        </div>
+        <h1 class="text-white p-5 font-yeseva text-3xl">Quizzie</h1>
+        <nav id="ratings"></nav>
+    </header>
+    <main id="app" class="flex-grow p-5"></main>
+    <footer class="bg-gray-800 text-white py-4 mt-auto">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024, Adrian Jasaroska. Alle Rechte vorbehalten.</p>
+            <p>Dies ist ein Schulprojekt, Q & A's!</p>
+            <p>Kontakt: <a href="mailto:adrian.jasaroska@ict.csbe.ch" class="text-teal-400">adrian.jasaroska@ict.csbe.ch</a></p>
+            <ul class="flex justify-center space-x-4 mt-4">
+                <li>
+                    <a href="https://github.com/JasaroskaAdrian" class="hover:text-teal-400">
+                        <div class="group relative">
+                            <button>
+                                <svg
+                                    stroke-linejoin="round"
+                                    stroke-linecap="round"
+                                    stroke-width="2"
+                                    stroke="currentColor"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    class="w-8 hover:scale-125 duration-200 hover:stroke-blue-500"
+                                >
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                                    ></path>
+                                </svg>
+                            </button>
+                            <span
+                                class="absolute -top-14 left-[50%] -translate-x-[50%] z-20 origin-left scale-0 px-3 rounded-lg border border-gray-300 bg-white py-2 text-sm font-bold shadow-md transition-all duration-300 ease-in-out group-hover:scale-100"
+                            >
+                                GitHub
+                            </span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
-  </body>
+    <script src="bundle.js"></script>
+</body>
 </html>
