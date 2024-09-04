@@ -3,6 +3,10 @@
 
  # Setup-Process
 
- npm install
+ Dies installiert alle Packages die im package.json:
+ -> npm install
 
- Dies installiert alle Packages die im package.json 
+
+
+Um die Webseite zum Laufen zu bringen müssen alle Packages/Dependencies installiert werden und dann muss dies in der Console eingegeben werden:
+-> npm run dev
