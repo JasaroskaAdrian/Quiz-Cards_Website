@@ -46,6 +46,7 @@ function view(dispatch, model) {
 }
 
 function cardView(dispatch, item, index) {
+
   return div(
     {
       className: "bg-teal-700 p-4 rounded-lg border border-gray-400 w-80 relative shadow-lg",
@@ -69,7 +70,7 @@ function cardView(dispatch, item, index) {
       ),
       item.showAnswer ? h4({ className: "font-bold mb-2 text-white text-4x1" }, "Answer") : null,
       item.showAnswer ? p({ className: "mb-4 text-white font-thin" }, item.answer) : null,
-      div({ className: "flex justify-around mt-4" }, [
+      item.showAnswer ? div({ className: "flex justify-around mt-4" }, [
         button(
           {
             className: "bg-red-500 text-white px-4 py-2 rounded",
@@ -91,7 +92,8 @@ function cardView(dispatch, item, index) {
           },
           "Great"
         ),
-      ]),
+        
+      ]) : null
     ]
   );
 }
