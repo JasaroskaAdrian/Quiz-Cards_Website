@@ -71,21 +71,21 @@ function view(dispatch, model) {
           button(
             {
               className: "bg-red-500 text-white px-4 py-2 rounded",
-              onclick: () => dispatch(MSGS.RATE_CARD, { index, rating: 0 }),
+              onclick: () => dispatch(MSGS.RATE_CARD, { index, rating: 0 }), // Ratings Funktion habe ich // https://chatgpt.com gefragt
             },
             "Bad"
           ),
           button(
             {
               className: "bg-blue-500 text-white px-4 py-2 rounded",
-              onclick: () => dispatch(MSGS.RATE_CARD, { index, rating: 1 }),
+              onclick: () => dispatch(MSGS.RATE_CARD, { index, rating: 1 }), // Ratings Funktion habe ich // https://chatgpt.com gefragt
             },
             "Good"
           ),
           button(
             {
               className: "bg-green-500 text-white px-4 py-2 rounded",
-              onclick: () => dispatch(MSGS.RATE_CARD, { index, rating: 2 }),
+              onclick: () => dispatch(MSGS.RATE_CARD, { index, rating: 2 }), // Ratings Funktion habe ich // https://chatgpt.com gefragt
             },
             "Great"
           ),

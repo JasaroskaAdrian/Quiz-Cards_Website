@@ -44,7 +44,7 @@ function update(msg, model, value) {
         return {
           ...model,
           items: model.items
-            .map((item, i) => (i === value.index ? { ...item, rating: item.rating + value.rating } : item))
+            .map((item, i) => (i === value.index ? { ...item, rating: item.rating + value.rating } : item))  // https://chatgpt.com 
             .sort((a, b) => a.rating - b.rating), // https://chatgpt.com - Verstehe ich persönlich nicht
         };
   
