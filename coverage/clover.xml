@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1725647829759" clover="3.2.0">
+  <project timestamp="1725647829759" name="All files">
+    <metrics statements="34" coveredstatements="28" conditionals="21" coveredconditionals="19" methods="16" coveredmethods="11" elements="71" coveredelements="58" complexity="0" loc="34" ncloc="34" packages="1" files="2" classes="2"/>
+    <file name="update.js" path="C:\Users\dani2\Downloads\modul323-counter-master\Modul-323_Calorie-Tracker_Jasaroska-Adrian\Quiz-Cards_Website\src\update.js">
+      <metrics statements="17" coveredstatements="16" conditionals="15" coveredconditionals="13" methods="5" coveredmethods="5"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="11" count="10" type="cond" truecount="6" falsecount="1"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="19" count="3" type="cond" truecount="4" falsecount="0"/>
+      <line num="20" count="2" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="34" count="2" type="stmt"/>
+      <line num="38" count="2" type="stmt"/>
+      <line num="40" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="44" count="2" type="stmt"/>
+      <line num="47" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="48" count="2" type="stmt"/>
+      <line num="52" count="0" type="stmt"/>
+      <line num="56" count="1" type="stmt"/>
+    </file>
+    <file name="view.js" path="C:\Users\dani2\Downloads\modul323-counter-master\Modul-323_Calorie-Tracker_Jasaroska-Adrian\Quiz-Cards_Website\src\view.js">
+      <metrics statements="17" coveredstatements="12" conditionals="6" coveredconditionals="6" methods="11" coveredmethods="6"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="16" count="5" type="stmt"/>
+      <line num="18" count="5" type="stmt"/>
+      <line num="27" count="1" type="stmt"/>
+      <line num="34" count="1" type="stmt"/>
+      <line num="37" count="1" type="stmt"/>
+      <line num="41" count="2" type="stmt"/>
+      <line num="47" count="2" type="stmt"/>
+      <line num="55" count="0" type="stmt"/>
+      <line num="64" count="0" type="stmt"/>
+      <line num="74" count="0" type="stmt"/>
+      <line num="81" count="0" type="stmt"/>
+      <line num="88" count="0" type="stmt"/>
+      <line num="98" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
